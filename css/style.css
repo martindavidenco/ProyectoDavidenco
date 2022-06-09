@@ -45,6 +45,7 @@
     width: 100%;
     padding: 20px;
     flex-wrap: wrap;
+    background-color: rgba(41, 41, 41, 0.897);
 }
 
 .header div {
@@ -89,6 +90,10 @@
 }
 
 /*-----MAIN-----*/
+.main {
+    background-color: rgba(41, 41, 41, 0.897);
+}
+
 .mainIndex {
     display: flex;
     flex-wrap: wrap;
@@ -202,6 +207,7 @@
     align-items: flex-end;
     grid-area: footer;
     width: 100%;
+    background-color: rgba(41, 41, 41, 0.897);
 }
 
 .footer div p {
@@ -247,7 +253,7 @@
     justify-content: center;
     align-items: center;
     animation-name: cards;
-    animation-duration: 4s;
+    animation-duration: 2.5s;
     animation-iteration-count: 1;
 }
 
@@ -286,7 +292,20 @@
     background-color: #c9400a;
     border-radius: 7px;
     border-color: rgb(78, 19, 4)(255, 51, 0);
+    color: #c9400a;
+    background-color: rgba(175, 155, 42, 0.897);
+
+
+    border-radius: 15px;
 }
+
+.productos div a input:hover {
+    color: rgba(175, 155, 42, 0.897);
+    background-color: #c9400a;
+
+}
+
+
 
 .productos div figure {
     display: flex;
@@ -352,10 +371,19 @@
     animation-duration: 3s;
     animation-iteration-count: infinite;
 }
+
 @keyframes gradiente {
-    0%{background-position: 0 50%;}
-    50%{background-position: 100% 50%;}
-    100%{background-position: 0 50%;}
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
 }
 
 
@@ -388,8 +416,11 @@
 
 /*----CSS PUBLICAR----*/
 .mainPublicar {
-    display: flex; justify-content: center;align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .mainPublicar section {
     display: flex;
     flex-direction: column;
@@ -555,14 +586,27 @@
 @media screen and (max-width:480px) {
 
     /*---INDEX---*/
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+
     .header nav ul li {
         font-size: 10px;
+    }
+
+    .header nav ul {
+        display: flex;
+        flex-direction: column;
     }
 
     .enunciados div {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin: 5px;
+        margin-left: -20px;
     }
 
     .hero h2 {
@@ -581,10 +625,15 @@
 
         width: 150px;
         height: 100px;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .enunciados div div p {
         font-weight: 600;
+        font-size: 10px;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .enunciados div div a img {
@@ -594,8 +643,8 @@
 
     .footer {
         display: flex;
-        justify-content: end;
-        align-self: flex-end;
+        justify-content: center;
+        align-self: center;
         flex-wrap: wrap;
         flex-direction: row;
     }
@@ -607,6 +656,16 @@
     .footer div a img {
         width: 10px;
         height: 10px;
+    }
+
+    .footer div p {
+        font-size: 10px;
+    }
+
+    .footer a img {
+        height: 30px;
+        width: 30px;
+        ;
     }
 
     /*-----EXPLORAR-----*/
@@ -629,5 +688,47 @@
     .fotoinfo {
         display: flex;
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width:280px) {
+    .header div {
+        font-size: 10px;
+    }
+    .productos div {
+        height: 50px;
+
+    }
+
+    .mainExplorar nav ul li {
+        font-weight: 300;
+        font-size: 8px;
+    }
+    .enunciados div div {
+
+        width: 100px;
+        height: 65px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .enunciados div div p {
+        font-weight: 300;
+        font-size: 8px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .enunciados div div a img {
+        width: 70px;
+        height: 50px;
+    }
+    .productos div figure a img {
+        height: 75px;
+        width: 75px;
+    }
+    .mainExplorar nav ul li a {
+        width:30px;
+        height:10px;
     }
 }
