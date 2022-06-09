@@ -246,7 +246,21 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    animation-name: cards;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
 }
+
+@keyframes cards {
+    from {
+        transform: translate(1400px);
+    }
+
+    to {
+        transform: translate(0);
+    }
+}
+
 
 .productos div figure a img {
     height: 350px;
@@ -330,7 +344,20 @@
     display: flex;
     align-content: space-between;
     font-weight: normal;
+    border: 1px solid rgba(0, 0, 0, 0.544);
+    background-color: #ce6809;
+    background: linear-gradient(45deg, red, #ce6809, rgb(153, 13, 13));
+    background-size: 400% 400%;
+    animation: gradiente;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
+@keyframes gradiente {
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+}
+
 
 .tablaInfo div div div {
     border: 1px black;
@@ -360,12 +387,36 @@
 }
 
 /*----CSS PUBLICAR----*/
-
+.mainPublicar {
+    display: flex; justify-content: center;align-items: center;
+}
 .mainPublicar section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.544);
+    border-radius: 15px;
+    background-color: #ce6809;
+    background: linear-gradient(45deg, red, #ce6809, rgb(153, 13, 13));
+    background-size: 400% 400%;
+    animation: gradiente;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes gradiente {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
 }
 
 .publicar {
@@ -412,6 +463,26 @@
     background-color: #ce6809;
     width: 400px;
     flex-wrap: wrap;
+    background: linear-gradient(45deg, red, #ce6809, rgb(153, 13, 13));
+    background-size: 400% 400%;
+    position: relative;
+    animation: gradiente;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes gradiente {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
 }
 
 .botones div {
@@ -559,3 +630,4 @@
         display: flex;
         flex-direction: column;
     }
+}
