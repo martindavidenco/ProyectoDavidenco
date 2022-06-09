@@ -1,0 +1,560 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap');
+
+.gridContainer {
+    background-color: rgba(41, 41, 41, 0.897);
+    background-size: cover;
+    background-position: center;
+}
+
+/*----GRID---*/
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr auto 0.5fr;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+/*-----HEADER-----*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.header div {
+    color: #c9400a;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+}
+
+.header div img {
+    width: 100px;
+    height: 80px;
+}
+
+.header div div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 0 0
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    margin: 5px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.nav ul li a {
+    color: #c9400a;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px red
+}
+
+.nav ul li a:hover {
+    color: red;
+    transform: scale(1.1);
+
+}
+
+/*-----MAIN-----*/
+.mainIndex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.registrar {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 50px;
+    flex-direction: row;
+}
+
+.registrar div {
+    margin: 5px;
+}
+
+.registrar div a img {
+    width: 30px;
+    height: 30px;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    height: 80vh;
+    font-weight: 600;
+    color: rgba(175, 155, 42, 0.897);
+    background: url(../assets/fotofuego.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    flex-wrap: wrap;
+}
+
+.hero h2 {
+    font-size: 50px;
+}
+
+.hero p {
+    background-color: rgba(41, 41, 41, 0.897);
+}
+
+.enunciados {
+    width: 100%;
+}
+
+.hero a {
+    text-decoration: none;
+    color: #c9400a;
+    background-color: rgba(175, 155, 42, 0.897);
+    margin: 15px;
+    font-size: 30px;
+    border-radius: 15px;
+}
+
+.hero a:hover {
+    color: rgba(175, 155, 42, 0.897);
+    background-color: #c9400a;
+
+}
+
+.enunciados div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.enunciados div div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 250px;
+    border: 1px solid rgba(0, 0, 0, 0.544);
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 10px 10px 24px -4px;
+    transition: all 0.8s;
+}
+
+.enunciados div div:hover {
+    transform: scale(1.1);
+    color: #c9400a;
+}
+
+.enunciados div div p {
+    background-image: linear-gradient(to bottom, #c9400a, #ac652b);
+    color: rgb(255, 221, 25);
+    font-weight: 900;
+    border-radius: 15px;
+}
+
+.enunciados div div a img {
+    width: 200px;
+    height: 150px;
+    ;
+}
+
+/*---FOOTER---*/
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    grid-area: footer;
+    width: 100%;
+}
+
+.footer div p {
+    color: #c9400a;
+}
+
+.footer a img {
+    width: 80px;
+    height: 80px;
+}
+
+.footer div a img {
+    width: 30px;
+    height: 30px;
+}
+
+/* CSS DEL ARCHIVO EXPLORAR*/
+
+
+.mainExplorar nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mainExplorar nav ul li {
+    margin: 5px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+
+.mainExplorar nav ul li a {
+    color: #c9400a;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px red
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.productos div figure a img {
+    height: 350px;
+    width: 350px;
+}
+
+.productos div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.544);
+    text-align: center;
+    box-shadow: 10px 10px 24px -4px;
+    height: 400px;
+    margin: 8px;
+    border-radius: 10px;
+}
+
+.productos div a input {
+    background-color: #c9400a;
+    border-radius: 7px;
+    border-color: rgb(78, 19, 4)(255, 51, 0);
+}
+
+.productos div figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+}
+
+.productos div figure figcaption {
+    color: #c9400a;
+}
+
+/*----CSS-PRODUCTO-----*/
+.mainProducto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainproducto aside {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-self: flex-end;
+}
+
+.megusta {
+    border: solid red;
+    color: red;
+    cursor: pointer;
+    background: linear-gradient(to right, transparent 50%, red 50%);
+    background-size: 200%;
+    background-position: left;
+    transition: background-position 0, 5s;
+}
+
+.megusta:hover {
+    background-position: right;
+    color: black;
+    font-weight: 700;
+}
+
+.tituloYInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tablaInfo {
+    background-color: #ce6809;
+    display: flex;
+    align-content: space-between;
+    font-weight: normal;
+}
+
+.tablaInfo div div div {
+    border: 1px black;
+}
+
+.tituloYInfo figure {
+    display: flex;
+}
+
+.whatsapp {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.whatsapp figcaption {
+    padding: 10px;
+    color: #00cc66;
+    font-size: 500;
+}
+
+.mainProducto aside section {
+
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 50px;
+}
+
+/*----CSS PUBLICAR----*/
+
+.mainPublicar section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.publicar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.tablaPublicar div {
+    display: flex;
+    padding: 10px;
+}
+
+.tablaPublicar div p {
+    font-weight: 600;
+}
+
+.mainPublicar aside {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 50px;
+}
+
+.mainPublicar aside section div {
+    display: flex;
+    box-shadow: 10px 10px 24px -4px
+}
+
+/*------CSS REGISTRO---------*/
+.mainrestro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainRegistro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.544);
+    border-radius: 15px;
+    background-color: #ce6809;
+    width: 400px;
+    flex-wrap: wrap;
+}
+
+.botones div {
+    display: flex;
+    align-content: flex-end;
+    justify-content: center;
+}
+
+.registrotitulo {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.mainRegistro section form div {
+    padding-bottom: 10px;
+}
+
+
+/*-----MEDIAQUERIES-INDEX---*/
+/*----tablet----*/
+@media screen and (max-width:1023px) {
+    .enunciados div {
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+    }
+
+    .gridContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr auto 0.1fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "header"
+            "main "
+            "footer";
+        flex-wrap: wrap;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*----EXPLORAR----*/
+    .productos div figure a img {
+        height: 220px;
+        width: 220px;
+    }
+
+    .productos div {
+        height: 320px;
+
+    }
+
+    /*-------PRODUCTO------*/
+
+}
+
+/*---CELULAR---*/
+@media screen and (max-width:480px) {
+
+    /*---INDEX---*/
+    .header nav ul li {
+        font-size: 10px;
+    }
+
+    .enunciados div {
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 10px;
+    }
+
+    .hero a {
+        font-size: 15px;
+    }
+
+    .enunciados div div {
+
+        width: 150px;
+        height: 100px;
+    }
+
+    .enunciados div div p {
+        font-weight: 600;
+    }
+
+    .enunciados div div a img {
+        width: 100px;
+        height: 80px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: end;
+        align-self: flex-end;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .footer div {
+        display: flex;
+    }
+
+    .footer div a img {
+        width: 10px;
+        height: 10px;
+    }
+
+    /*-----EXPLORAR-----*/
+    .productos div figure a img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .productos div {
+        height: 200px;
+
+    }
+
+    .mainExplorar nav ul li {
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    /*----PRODUCTO----*/
+    .fotoinfo {
+        display: flex;
+        flex-direction: column;
+    }
