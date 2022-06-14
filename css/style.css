@@ -110,14 +110,17 @@
     margin: 5px;
     transition: all 0.8s;
 }
+
 .registrar div:hover {
     transform: scale(1.1);
 }
+
 .registrar div a img {
     width: 30px;
     height: 30px;
 }
 
+ 
 .hero {
     display: flex;
     justify-content: center;
@@ -230,7 +233,10 @@
 
 /* CSS DEL ARCHIVO EXPLORAR*/
 
-
+.mainExplorar nav {
+    background-color: rgba(41, 41, 41, 0.897);
+    display: flex;
+}
 .mainExplorar nav ul {
     display: flex;
     list-style: none;
@@ -256,14 +262,16 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    animation-name: cards;
-    animation-duration: 2.5s;
+    animation-name:cards;
+    animation-duration: 2s;
     animation-iteration-count: 1;
-    
+
 }
+
 .productos div:hover {
     transform: scale(1.1);
 }
+
 @keyframes cards {
     from {
         transform: translate(1400px);
@@ -274,36 +282,42 @@
     }
 }
 
-
-.productos div figure a img {
-    height: 350px;
-    width: 350px;
+.card img {
+    height: 250px;
+    width: 250px;
+    display: flex;
+    align-self: center;
 }
 
-.productos div {
+.card {
+    background-color: rgba(41, 41, 41, 0.897);
+}
+
+.card div {
+    color: orangered;
     display: flex;
-    flex-wrap: wrap;
+    align-self: flex-start;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    padding: 3px;
-    border: 1px solid rgba(0, 0, 0, 0.544);
-    text-align: center;
-    box-shadow: 10px 10px 24px -4px;
+}
+.card div a {
+    color: #c9400a;
+    background-color: rgba(175, 155, 42, 0.897);
+    border-color: orangered;display: flex; align-self: center;
+}
+.card div a:hover {
+    color: rgba(175, 155, 42, 0.897);
+    background-color: #c9400a; border-color: #c9400a;
+}
+.productos div {
+
+
     height: 400px;
     margin: 8px;
-    border-radius: 10px;
+
     transition: all 1s;
 }
 
-.productos div a input {
-    background-color: #c9400a;
-    border-radius: 7px;
-    border-color: rgb(78, 19, 4)(255, 51, 0);
-    color: #c9400a;
-    background-color: rgba(175, 155, 42, 0.897);
-    border-radius: 15px;
-}
+
 
 .productos div a input:hover {
     color: rgba(175, 155, 42, 0.897);
@@ -371,7 +385,7 @@
     background: linear-gradient(45deg, red, #ce6809, rgb(153, 13, 13));
     background-size: 400% 400%;
     animation: gradiente;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
 }
 
@@ -380,9 +394,7 @@
         background-position: 0 50%;
     }
 
-    50% {
-        background-position: 100% 50%;
-    }
+
 
     100% {
         background-position: 0 50%;
@@ -698,6 +710,7 @@
     .header div {
         font-size: 10px;
     }
+
     .productos div {
         height: 50px;
 
@@ -707,6 +720,7 @@
         font-weight: 300;
         font-size: 8px;
     }
+
     .enunciados div div {
 
         width: 100px;
@@ -726,12 +740,14 @@
         width: 70px;
         height: 50px;
     }
+
     .productos div figure a img {
         height: 75px;
         width: 75px;
     }
+
     .mainExplorar nav ul li a {
-        width:30px;
-        height:10px;
+        width: 30px;
+        height: 10px;
     }
 }
