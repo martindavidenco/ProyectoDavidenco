@@ -36,7 +36,9 @@
 .footer {
     grid-area: footer;
 }
-
+.container{
+    background-color: rgba(41, 41, 41, 0.897);
+}
 /*-----HEADER-----*/
 .header {
     display: flex;
@@ -46,12 +48,12 @@
     padding: 20px;
     flex-wrap: wrap;
     background-color: rgba(41, 41, 41, 0.897);
-}
+font-weight: 900;}
 
 .header div {
     color: #c9400a;
     font-size: 20px;
-    font-weight: bold;
+font-weight: 900;
     display: flex;
 }
 
@@ -235,7 +237,10 @@
 
 .mainExplorar nav {
     background-color: rgba(41, 41, 41, 0.897);
-    display: flex;
+
+}
+.mainExplorar nav div {
+    display: flex; justify-content: center;align-items: center;
 }
 .mainExplorar nav ul {
     display: flex;
@@ -254,7 +259,7 @@
 .mainExplorar nav ul li a {
     color: #c9400a;
     text-decoration: none;
-    text-shadow: 2px 2px 2px red
+
 }
 
 .productos {
@@ -267,9 +272,17 @@
     animation-iteration-count: 1;
 
 }
+.botonsitoo {
+    color: #c9400a;
+}
+.navexplorar {
+    padding-left:  350px;
+}
 
-.productos div:hover {
+
+.card:hover {
     transform: scale(1.1);
+    color: #c9400a;
 }
 
 @keyframes cards {
@@ -308,14 +321,16 @@
     color: rgba(175, 155, 42, 0.897);
     background-color: #c9400a; border-color: #c9400a;
 }
-.productos div {
+.card {
 
 
     height: 400px;
-    margin: 8px;
+    margin: 15px;
 
-    transition: all 1s;
+    transition: all 1s;box-shadow: 10px 10px 24px -4px;
 }
+
+
 
 
 
