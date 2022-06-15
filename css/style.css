@@ -36,9 +36,11 @@
 .footer {
     grid-area: footer;
 }
-.container{
+
+.container {
     background-color: rgba(41, 41, 41, 0.897);
 }
+
 /*-----HEADER-----*/
 .header {
     display: flex;
@@ -48,12 +50,13 @@
     padding: 20px;
     flex-wrap: wrap;
     background-color: rgba(41, 41, 41, 0.897);
-font-weight: 900;}
+    font-weight: 900;
+}
 
 .header div {
     color: #c9400a;
     font-size: 20px;
-font-weight: 900;
+    font-weight: 900;
     display: flex;
 }
 
@@ -122,7 +125,7 @@ font-weight: 900;
     height: 30px;
 }
 
- 
+
 .hero {
     display: flex;
     justify-content: center;
@@ -239,9 +242,13 @@ font-weight: 900;
     background-color: rgba(41, 41, 41, 0.897);
 
 }
+
 .mainExplorar nav div {
-    display: flex; justify-content: center;align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .mainExplorar nav ul {
     display: flex;
     list-style: none;
@@ -267,16 +274,18 @@ font-weight: 900;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    animation-name:cards;
+    animation-name: cards;
     animation-duration: 2s;
     animation-iteration-count: 1;
 
 }
+
 .botonsitoo {
     color: #c9400a;
 }
+
 .navexplorar {
-    padding-left:  350px;
+    padding-left: 350px;
 }
 
 
@@ -312,22 +321,29 @@ font-weight: 900;
     align-self: flex-start;
     flex-direction: column;
 }
+
 .card div a {
     color: #c9400a;
     background-color: rgba(175, 155, 42, 0.897);
-    border-color: orangered;display: flex; align-self: center;
+    border-color: orangered;
+    display: flex;
+    align-self: center;
 }
+
 .card div a:hover {
     color: rgba(175, 155, 42, 0.897);
-    background-color: #c9400a; border-color: #c9400a;
+    background-color: #c9400a;
+    border-color: #c9400a;
 }
+
 .card {
 
 
     height: 400px;
     margin: 15px;
 
-    transition: all 1s;box-shadow: 10px 10px 24px -4px;
+    transition: all 1s;
+    box-shadow: 10px 10px 24px -4px;
 }
 
 
@@ -607,6 +623,11 @@ font-weight: 900;
         height: 320px;
 
     }
+    .navexplorar {
+        padding-left: 0;
+ 
+     }
+ 
 
     /*-------PRODUCTO------*/
 
@@ -699,12 +720,21 @@ font-weight: 900;
     }
 
     /*-----EXPLORAR-----*/
-    .productos div figure a img {
+    .productos {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .navexplorar {
+     padding-left: 0;
+
+    }
+    .card img{
         height: 150px;
         width: 150px;
     }
 
-    .productos div {
+    .card {
         height: 200px;
 
     }
@@ -712,6 +742,15 @@ font-weight: 900;
     .mainExplorar nav ul li {
         font-weight: 500;
         font-size: 15px;
+    }
+    .navflex {
+        
+        flex-direction: column;
+    }
+    .card {
+       height: 160px;
+       width: 160px;
+       padding: 0;
     }
 
     /*----PRODUCTO----*/
