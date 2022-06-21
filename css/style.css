@@ -93,17 +93,6 @@
     transform: scale(1.1);
 
 }
-
-/*-----MAIN-----*/
-.main {
-    background-color: rgba(41, 41, 41, 0.897);
-}
-
-.mainIndex {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .registrar {
     display: flex;
     justify-content: flex-end;
@@ -125,6 +114,15 @@
     height: 30px;
 }
 
+/*-----MAIN-----*/
+.main {
+    background-color: rgba(41, 41, 41, 0.897);
+}
+
+.mainIndex {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .hero {
     display: flex;
@@ -208,7 +206,6 @@
 .enunciados div div a img {
     width: 200px;
     height: 150px;
-    ;
 }
 
 /*---FOOTER---*/
@@ -713,7 +710,7 @@
     .footer a img {
         height: 30px;
         width: 30px;
-        ;
+
     }
 
     /*-----EXPLORAR-----*/
