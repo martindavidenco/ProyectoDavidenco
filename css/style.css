@@ -300,7 +300,10 @@
         transform: translate(0);
     }
 }
-
+.form-check-input:checked {
+    background-color:rgba(175, 155, 42, 0.897) ;
+    border-color: #c9400a;
+}
 .card img {
     height: 250px;
     width: 250px;
@@ -315,7 +318,6 @@
 .card div {
     color: orangered;
     display: flex;
-    align-self: flex-start;
     flex-direction: column;
 }
 
@@ -460,10 +462,25 @@
 /*----CSS PUBLICAR----*/
 .mainPublicar {
     display: flex;
-    justify-content: center;
     align-items: center;
+    flex-direction:column;
+    
 }
+.d-none p {
+    color:rgba(175, 155, 42, 0.897)
+    ;font-weight: 600;
+    margin-top: 25px;
+}
+.imagenesPublicar {
+    margin: 15px;
+    display:flex;
+    flex-direction: row-reverse;
+}
+.imgg{
+    width: 800px;
+    height: 500px;
 
+}
 .mainPublicar section {
     display: flex;
     flex-direction: column;
@@ -492,12 +509,24 @@
         background-position: 0 50%;
     }
 }
+.botonsin {
+    color: #c9400a;
+    background-color: rgba(175, 155, 42, 0.897);
+    border-color: #c9400a;
+    border-radius:20px;
+    padding: 5px;
+}
+.botonsin:hover {
+    color: rgba(175, 155, 42, 0.897);
+    background-color: #c9400a;
+}
 
 .publicar {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    padding: 15px;
 }
 
 .tablaPublicar div {
@@ -525,7 +554,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction:column-reverse;
 }
+.accordion {
+    margin:50px;
+    --bs-accordion-bg:#ce6809;
+    --bs-accordion-active-color: yellow;
+    --bs-accordion-btn-focus-border-color: #ce6809;
+--bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(253, 41, 13, 0.25);
+    width:50%;
+    flex-wrap: wrap;
+    background: linear-gradient(45deg, red, #ce6809, rgb(153, 13, 13));
+    background-size: 400% 400%;
+    position: relative;
+    animation: gradiente;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.accordion-button:not(.collapsed) {
+    color: red;
+    background-color:#ce6809;}
 
 .mainRegistro {
     display: flex;
