@@ -1,0 +1,5 @@
+En el "_main.scss" (del index) aplique mixin para determinar ancho y alto de los elementos.
+Tambien apliqué extend a las cards de enunciados, ahora cada card por la que se le pase el mouse, tendra una sombra de distinto color. Estos colores estan aplicados con un map get, el cual esta creado en "/base/_variables.scss" e importado en donde estoy trabajando
+
+Sobre SEO optimizé la img del hero e hice uso de las etiquetas meta para la descripcion y las palabras clave.
+Tambien tengo encabezados H en mi pagina
