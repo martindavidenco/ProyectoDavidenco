@@ -83,10 +83,11 @@
 }
 .registrar div {
   margin: 5px;
-  transition: all 0.8s;
+  transition: all 0s;
 }
 .registrar div:hover {
   transform: scale(1.1);
+  box-shadow: 10px;
 }
 .registrar div a img {
   width: 30px;
@@ -112,7 +113,8 @@
   flex-wrap: wrap;
   margin: 10px;
 }
-.enunciados div div {
+
+.card1, .card3, .card2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -125,19 +127,27 @@
   box-shadow: 10px 10px 24px -4px;
   transition: all 0.8s;
 }
-.enunciados div div:hover {
+.card1:hover, .card3:hover, .card2:hover {
   transform: scale(1.1);
   color: #c9400a;
 }
-.enunciados div div p {
+.card1 p, .card3 p, .card2 p {
   background-image: linear-gradient(to bottom, #c9400a, #ac652b);
   color: rgb(255, 221, 25);
   font-weight: 900;
   border-radius: 15px;
 }
-.enunciados div div a img {
+.card1 a img, .card3 a img, .card2 a img {
   width: 200px;
   height: 150px;
+}
+
+.card2:hover {
+  color: rgb(170, 0, 11);
+}
+
+.card3:hover {
+  color: rgba(175, 155, 42, 0.897);
 }
 
 .hero {
@@ -145,7 +155,6 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  height: 60px;
   width: 100%;
   height: 80vh;
   font-weight: 600;
