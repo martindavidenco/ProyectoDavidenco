@@ -413,22 +413,18 @@ footer div a img {
   }
 }
 .fonditoo {
-  background-image: url(/FlameDavidenco/assets/fotofuego.jpg);
+  background-image: url(../assets/fotofuego.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   color: rgba(175, 155, 42, 0.897);
 }
 
 .fonditoo1 {
-  background-image: url(/FlameDavidenco/assets/fotofuego.jpg);
+  background-image: url(../assets/fotofuego.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   color: rgba(175, 155, 42, 0.897);
-}
-
-.accordion-body {
-  background-image: url(FlameDavidenco/assets/banner_with_flames.jpg);
 }
 
 .accordion {
