@@ -36,10 +36,51 @@
             justify-content: center;
         }
     }
+
+    .navexplorar {
+        padding-left: 0;
+    }
+
+    .mainExplorar {
+        nav {
+            padding-left: 0;
+
+        }
+    }
+}
+
+@media screen and (max-width:580px) {
+    .navexplorar {
+        padding-left: 0;
+
+    }
+
+    .collapse {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mainExplorar {
+
+        nav {
+            ul {
+                li {
+                    font-weight: 500;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    .navflex {
+
+        flex-direction: column;
+    }
+
 }
 
 /*---CELULAR---*/
-@media screen and (max-width:480px) {
+@media screen and (max-width:540px) {
 
     /*---INDEX---*/
     .header {
@@ -135,6 +176,125 @@
 
     }
 
+    /*--EXPLORAR--*/
+    .mainExplorar {
+
+        nav {
+            ul {
+                li {
+                    font-weight: 300;
+                    font-size: 8px;
+                }
+            }
+        }
+    }
+
+    .productos {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .navexplorar {
+        padding-left: 0;
+
+    }
+
+    .card {
+        height: 100px;
+        width: 160px;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+
+        img {
+            height: 100px;
+            width: 100px;
+        }
+    }
+
+    .card-title {
+        font-size: 15px;
+
+    }
+
+    /*-----PUBLICAR-----*/
+    .publicar {
+        width: 400px;
+    }
+
+    .tablaPublicar {
+        div {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+    }
+
+    /*-----REGISTRO-----*/
+    /*---PRODUCTO---*/
+    .fotoinfo {
+        display: flex;
+        flex-direction: column;
+    }
+    .comentarios{
+        width:270px;
+    }
+}
+
+@media screen and (max-width:399px) {
+    .publicar {
+        width: 270px;
+    }
+
+    .mainPublicar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        div {
+            p {
+                font-size: 10px;
+            }
+
+            display: flex;
+            flex-wrap:wrap;
+            padding: 5px;
+        }
+    }
+
+    .tablaPublicar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .botonsin {
+        width: 200px;
+        font-size: 9px;
+    }
+
+    .mainRegistro {
+        width: 270px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .formularioRegistro {
+        div{
+            display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;}
+
+    }
 }
 
 @media screen and (max-width:280px) {
@@ -188,4 +348,44 @@
             }
         }
     }
+
+    /*---EXPLORAR*/
+    .card {
+        flex-direction: column;
+    }
+
+    .card-body {
+        display: flex;
+        font-size: 12px;
+    }
+
+    .mainExplorar {
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        nav {
+            ul {
+                li {
+                    font-weight: 300;
+                    font-size: 8px;
+
+                    a {
+                        width: 30px;
+                        height: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    /*PUBLICAR*/
+    .publicar {
+        width: 220px;
+    }
+    .mainRegistro {
+        width: 210px;
+}
+.comentarios{
+    width:200px;
+}
 }

@@ -1,0 +1,99 @@
+@import "../base/variables";
+
+.mainExplorar {
+    nav {
+        padding-left: 350px;
+        background-color: rgba(41, 41, 41, 0.897);
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        align-items: center;
+
+        li {
+            margin: 5px;
+            font-weight: 800;
+            text-transform: uppercase;
+
+            a {
+                color: #c9400a;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    animation-name: cards;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+.card {
+    height: 400px;
+    margin: 15px;
+
+    transition: all 1s;
+    box-shadow: 10px 10px 24px -4px;
+    background-color: rgba(41, 41, 41, 0.897);
+
+    &:hover {
+        transform: scale(1.1);
+        color: #c9400a;
+    }
+
+    img {
+        height: 250px;
+        width: 250px;
+        display: flex;
+        align-self: center;
+    }
+
+    div {
+        color: orangered;
+        display: flex;
+        flex-direction: column;
+
+        a {
+            color: #c9400a;
+            background-color: rgba(175, 155, 42, 0.897);
+            border-color: orangered;
+            display: flex;
+            align-self: center;
+
+            &:hover {
+                color: rgba(175, 155, 42, 0.897);
+                background-color: #c9400a;
+                border-color: #c9400a;
+            }
+        }
+    }
+}
+.form-check-input:checked {
+    background-color:rgba(175, 155, 42, 0.897) ;
+    border-color: #c9400a;
+}
+
+.botonsitoo {  color: #c9400a;}
+
+@keyframes cards {
+    from {
+        transform: translate(1400px);
+    }
+
+    to {
+        transform: translate(0);
+    }
+}

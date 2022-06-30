@@ -281,9 +281,6 @@
     color: #c9400a;
 }
 
-.navexplorar {
-    padding-left: 350px;
-}
 
 
 .card:hover {
@@ -347,25 +344,6 @@
 
 
 
-
-
-.productos div a input:hover {
-    color: rgba(175, 155, 42, 0.897);
-    background-color: #c9400a;
-}
-
-.productos div figure {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column-reverse;
-    flex-wrap: wrap;
-}
-
-.productos div figure figcaption {
-    color: #c9400a;
-}
-
 /*----CSS-PRODUCTO-----*/
 .mainProducto {
     display: flex;
@@ -375,12 +353,6 @@
     align-items: center;
 }
 
-.mainproducto aside {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    align-self: flex-end;
-}
 
 .megusta {
     border: solid red;
@@ -436,9 +408,7 @@
     border: 1px black;
 }
 
-.tituloYInfo figure {
-    display: flex;
-}
+
 
 .whatsapp {
     display: flex;
@@ -452,12 +422,6 @@
     font-size: 500;
 }
 
-.mainProducto aside section {
-
-    display: flex;
-    justify-content: flex-end;
-    margin: 0 50px;
-}
 
 /*----CSS PUBLICAR----*/
 .mainPublicar {
@@ -538,16 +502,7 @@
     font-weight: 600;
 }
 
-.mainPublicar aside {
-    display: flex;
-    justify-content: flex-end;
-    margin: 0 50px;
-}
 
-.mainPublicar aside section div {
-    display: flex;
-    box-shadow: 10px 10px 24px -4px
-}
 
 /*------CSS REGISTRO---------*/
 .mainrestro {
@@ -675,6 +630,28 @@
     /*-------PRODUCTO------*/
 
 }
+@media screen and (max-width:580px) {
+    
+    .navexplorar {
+        padding-left: 0;
+
+    }
+    .collapse {
+        display: flex;
+        flex-direction: column;
+    }
+    .mainExplorar nav ul li {
+        font-weight: 300;
+        font-size: 8px;
+    }
+
+    .navflex {
+
+        flex-direction: column;
+    }
+
+
+}
 
 /*---CELULAR---*/
 @media screen and (max-width:480px) {
@@ -694,46 +671,7 @@
         flex-direction: column;
     }
 
-    .enunciados div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 5px;
-        margin-left: -20px;
-    }
-
-    .hero h2 {
-        font-size: 30px;
-    }
-
-    .hero p {
-        font-size: 10px;
-    }
-
-    .hero a {
-        font-size: 15px;
-    }
-
-    .enunciados div div {
-
-        width: 150px;
-        height: 100px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .enunciados div div p {
-        font-weight: 600;
-        font-size: 10px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .enunciados div div a img {
-        width: 100px;
-        height: 80px;
-    }
+    
 
     .footer {
         display: flex;
@@ -778,21 +716,8 @@
         width: 100px;
     }
 
-    .card {
-        height: 200px;
-
-    }
-
-    .mainExplorar nav ul li {
-        font-weight: 500;
-        font-size: 15px;
-    }
-
-    .navflex {
-
-        flex-direction: column;
-    }
-
+    
+   
     .card {
         height: 100px;
         width: 160px;
@@ -810,11 +735,7 @@
         font-size: 8px;
     }
 
-    .collapse {
-        display: flex;
-        flex-direction: column;
-    }
-
+    
     /*----PRODUCTO----*/
     .fotoinfo {
         display: flex;

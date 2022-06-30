@@ -1,0 +1,69 @@
+@import "../base/_generales.scss";
+.mainProducto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;  
+}
+.megusta {
+    border: solid red;
+    color: red;
+    cursor: pointer;
+    background: linear-gradient(to right, transparent 50%, red 50%);
+    background-size: 200%;
+    background-position: left;
+    transition: background-position 0, 5s;
+    &:hover{ background-position: right;
+        color: black;
+        font-weight: 700;}
+}
+.tituloYInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    figure {display:flex;}
+}
+.tablaInfo {
+    background-color: #ce6809;
+    display: flex;
+    align-content: space-between;
+    font-weight: normal;
+    border: 1px solid rgba(0, 0, 0, 0.544);
+    background-color: #ce6809;
+    background: linear-gradient(45deg, red, #ce6809, rgb(153, 13, 13));
+    background-size: 400% 400%;
+    animation: gradiente;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    div {
+        div {
+            div{
+                border: 1px black;
+            }
+        }
+    }
+}
+.whatsapp {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    figcaption {
+        padding: 10px;
+        color: #00cc66;
+        font-size: 500;
+    }
+}
+
+@keyframes gradiente {
+    0% {
+        background-position: 0 50%;
+    }
+
+
+
+    100% {
+        background-position: 0 50%;
+    }
+}

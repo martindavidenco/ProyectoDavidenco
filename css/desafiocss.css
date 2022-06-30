@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -301,9 +300,6 @@ footer div a img {
   align-items: center;
   flex-direction: column;
 }
-.mainPublicar div p {
-  font-weight: 700;
-}
 
 @keyframes gradiente {
   0% {
@@ -412,25 +408,6 @@ footer div a img {
     background-position: 0 50%;
   }
 }
-.fonditoo {
-  background-image: url(/FlameDavidenco/assets/fotofuego.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: rgba(175, 155, 42, 0.897);
-}
-
-.fonditoo1 {
-  background-image: url(/FlameDavidenco/assets/fotofuego.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: rgba(175, 155, 42, 0.897);
-}
-
-.accordion-body {
-  background-image: url(FlameDavidenco/assets/banner_with_flames.jpg);
-}
-
 .accordion {
   margin: 50px;
   --bs-accordion-bg: #ce6809;
@@ -463,107 +440,6 @@ footer div a img {
   margin-top: 30px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  box-sizing: border-box;
-}
-
-/*----GRID---*/
-.gridContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.5fr auto 0.5fr;
-  grid-template-areas: "header header" "main main" "footer footer";
-  background-color: rgba(41, 41, 41, 0.897);
-}
-
-.header {
-  grid-area: header;
-}
-
-.main {
-  grid-area: main;
-}
-
-.footer {
-  grid-area: footer;
-}
-
-.container {
-  background-color: rgba(41, 41, 41, 0.897);
-}
-
-.mainProducto {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.megusta {
-  border: solid red;
-  color: red;
-  cursor: pointer;
-  background: linear-gradient(to right, transparent 50%, red 50%);
-  background-size: 200%;
-  background-position: left;
-  transition: background-position 0, 5s;
-}
-.megusta:hover {
-  background-position: right;
-  color: black;
-  font-weight: 700;
-}
-
-.tituloYInfo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.tituloYInfo figure {
-  display: flex;
-}
-
-.tablaInfo {
-  background-color: #ce6809;
-  display: flex;
-  align-content: space-between;
-  font-weight: normal;
-  border: 1px solid rgba(0, 0, 0, 0.544);
-  background-color: #ce6809;
-  background: linear-gradient(45deg, red, #ce6809, rgb(153, 13, 13));
-  background-size: 400% 400%;
-  animation: gradiente;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-.tablaInfo div div div {
-  border: 1px black;
-}
-
-.whatsapp {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-}
-.whatsapp figcaption {
-  padding: 10px;
-  color: #00cc66;
-  font-size: 500;
-}
-
-@keyframes gradiente {
-  0% {
-    background-position: 0 50%;
-  }
-  100% {
-    background-position: 0 50%;
-  }
-}
 /*-----MEDIAQUERIES-INDEX---*/
 /*----tablet----*/
 @media screen and (max-width: 1023px) {
@@ -709,67 +585,6 @@ footer div a img {
   .card-title {
     font-size: 15px;
   }
-  /*-----PUBLICAR-----*/
-  .publicar {
-    width: 400px;
-  }
-  .tablaPublicar div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  /*-----REGISTRO-----*/
-  /*---PRODUCTO---*/
-  .fotoinfo {
-    display: flex;
-    flex-direction: column;
-  }
-  .comentarios {
-    width: 270px;
-  }
-}
-@media screen and (max-width: 399px) {
-  .publicar {
-    width: 270px;
-  }
-  .mainPublicar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .mainPublicar div {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 5px;
-  }
-  .mainPublicar div p {
-    font-size: 10px;
-  }
-  .tablaPublicar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .botonsin {
-    width: 200px;
-    font-size: 9px;
-  }
-  .mainRegistro {
-    width: 270px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .formularioRegistro div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
 }
 @media screen and (max-width: 280px) {
   .header {
@@ -825,16 +640,6 @@ footer div a img {
     width: 30px;
     height: 10px;
   }
-  /*PUBLICAR*/
-  .publicar {
-    width: 220px;
-  }
-  .mainRegistro {
-    width: 210px;
-  }
-  .comentarios {
-    width: 200px;
-  }
 }
 
-/*# sourceMappingURL=desafiosass.css.map */
+/*# sourceMappingURL=desafiocss.css.map */

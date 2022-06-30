@@ -1,0 +1,97 @@
+@import "../base/variables";
+
+.mainrestro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.mainRegistro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.544);
+    border-radius: 15px;
+    background-color: #ce6809;
+    width: 400px;
+    flex-wrap: wrap;
+    background: linear-gradient(45deg, red, #ce6809, rgb(153, 13, 13));
+    background-size: 400% 400%;
+    position: relative;
+    animation: gradiente;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+    section {
+        form {
+            div {
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
+
+@keyframes gradiente {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+.fonditoo {
+    background-image: url(/FlameDavidenco/assets/fotofuego.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: $amarillo;
+}
+.fonditoo1 {
+    background-image: url(/FlameDavidenco/assets/fotofuego.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: $amarillo;
+}
+.accordion-body {
+    background-image: url(FlameDavidenco/assets/banner_with_flames.jpg);
+}
+.accordion {
+    margin: 50px;
+    --bs-accordion-bg: #ce6809;
+    --bs-accordion-active-color: yellow;
+    --bs-accordion-btn-focus-border-color: #ce6809;
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(253, 41, 13, 0.25);
+    width: 50%;
+    flex-wrap: wrap;
+    background: linear-gradient(45deg, red, #ce6809, rgb(153, 13, 13));
+    background-size: 400% 400%;
+    position: relative;
+    animation: gradiente;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.accordion-button:not(.collapsed) {
+    color: red;
+    background-color: #ce6809;
+}
+
+.botones {
+    div {
+        display: flex;
+        align-content: flex-end;
+        justify-content: center;
+    }
+}
+
+.registrotitulo {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
