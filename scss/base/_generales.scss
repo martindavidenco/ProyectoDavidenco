@@ -4,7 +4,7 @@
     font-family: sans-serif;
     box-sizing: border-box;
 }
-
+@import "./variables";
 @import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap');
 /*----GRID---*/
 .gridContainer {
@@ -15,7 +15,7 @@
         "header header"
         "main main"
         "footer footer";
-        background-color: rgba(41, 41, 41, 0.897);
+        background-color:$fondo ;
 }
 
 .header {

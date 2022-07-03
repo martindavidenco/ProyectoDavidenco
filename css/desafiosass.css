@@ -299,7 +299,7 @@ footer div a img {
 .mainPublicar {
   display: flex;
   align-items: center;
-  flex-direction: column;
+  justify-content: center;
 }
 .mainPublicar div p {
   font-weight: 700;
@@ -329,7 +329,6 @@ footer div a img {
   align-content: center;
   padding: 15px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   border: 1px solid rgba(0, 0, 0, 0.544);
@@ -349,7 +348,7 @@ footer div a img {
 }
 
 .imgg {
-  width: 800px;
+  width: 600px;
   height: 500px;
 }
 
@@ -520,7 +519,7 @@ footer div a img {
   justify-content: center;
   align-items: center;
 }
-.tituloYInfo figure {
+.tituloYInfo div {
   display: flex;
 }
 
@@ -546,7 +545,7 @@ footer div a img {
   align-items: center;
   padding: 10px;
 }
-.whatsapp figcaption {
+.whatsapp h3 {
   padding: 10px;
   color: #00cc66;
   font-size: 500;
@@ -593,6 +592,11 @@ footer div a img {
   }
   .mainExplorar nav {
     padding-left: 0;
+  }
+}
+@media screen and (max-width: 890px) {
+  .mainPublicar {
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 580px) {
@@ -728,6 +732,10 @@ footer div a img {
 @media screen and (max-width: 399px) {
   .publicar {
     width: 270px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
   }
   .mainPublicar {
     display: flex;

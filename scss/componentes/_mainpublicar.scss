@@ -3,7 +3,7 @@
 .mainPublicar {
     display: flex;
     align-items: center;
-    flex-direction: column;
+   justify-content: center;
     div{
         p{
             font-weight: 700;
@@ -40,7 +40,6 @@
     align-content: center;
     padding: 15px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 1px solid rgba(0, 0, 0, 0.544);
@@ -61,7 +60,7 @@
 }
 
 .imgg {
-    width: 800px;
+    width: 600px;
     height: 500px;
 
 }
