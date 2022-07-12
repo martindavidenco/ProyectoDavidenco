@@ -24,6 +24,7 @@
     justify-content: center;
     align-items: center;
     div {display:flex;}
+    h2{color: $naranja;}
 }
 .tablaInfo {
     background-color: #ce6809;
@@ -31,20 +32,17 @@
     align-content: space-between;
     font-weight: normal;
     border: 1px solid rgba(0, 0, 0, 0.544);
-    background-color: #ce6809;
     background: linear-gradient(45deg, red, #ce6809, rgb(153, 13, 13));
     background-size: 400% 400%;
-    animation: gradiente;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
     div {
         div {
             div{
-                border: 1px black;
+                border: 3px black;
             }
         }
     }
 }
+
 .whatsapp {
     display: flex;
     align-items: center;
@@ -55,7 +53,9 @@
         font-size: 500;
     }
 }
-
+.semper {
+    width: 300px;
+}
 @keyframes gradiente {
     0% {
         background-position: 0 50%;

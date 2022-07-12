@@ -20,50 +20,39 @@
     background: linear-gradient(45deg, red, #ce6809, rgb(153, 13, 13));
     background-size: 400% 400%;
     position: relative;
-    animation: gradiente;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-
-    section {
-        form {
-            div {
-                padding-bottom: 10px;
-            }
-        }
-    }
 }
 
-@keyframes gradiente {
-    0% {
-        background-position: 0 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0 50%;
-    }
-}
 .fonditoo {
     background-image: url(../assets/fotofuego.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     color: $amarillo;
+    background-attachment: fixed;
 }
+
 .fonditoo1 {
     background-image: url(../assets/fotofuego.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     color: $amarillo;
+    
+    background-attachment: fixed;
+    
+}
+.fonditoo2 {
+    background-image: url(../assets/fotofuego.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:initial;
+    color: $amarillo;
+    
 }
 
 .accordion {
     margin: 50px;
     --bs-accordion-bg: #ce6809;
-    --bs-accordion-active-color: yellow;
+    --bs-accordion-active-color: $rojo;
     --bs-accordion-btn-focus-border-color: #ce6809;
     --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(253, 41, 13, 0.25);
     width: 50%;
@@ -92,4 +81,15 @@
 .registrotitulo {
     margin-bottom: 30px;
     margin-top: 30px;
+}
+.accordion-body{
+    display: flex;
+    flex-wrap: wrap;
+}
+.formularioRegistro {
+div {
+    label {background-color: $fondo;
+        filter:alpha(opacity=70);
+    -moz-opacity:.70;opacity:.70;}
+}
 }
